@@ -6,9 +6,8 @@
     totalDivsW = divW * divsLen,
     current = 1;
     $("div.slider-text").css('overflow','hidden');
-        console.log('ddd');
 
-    $("#show").find('button')
+    $("#show").show().find('button')
         .on('click',function(){
            var direction = $(this).attr('id');
            var position = divW;

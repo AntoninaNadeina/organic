@@ -1,16 +1,18 @@
 @import "reset.css";
 
 
+
 .wrapper {
-    width: 1600px;
+    max-width: 1600px;
+    height: auto;
     margin: 0 auto;
-    background-color: #ffffff;
+   background-color: #ffffff;
 }
 
 header {
-    background: url("../images/bg.jpg")no-repeat;
-    width: 1600px;
-    height: 964px;
+    background: url("../images/bg.jpg") no-repeat;
+    width: 100%;
+    min-height: 964px;
 }
 
 .logo {
@@ -20,7 +22,7 @@ header {
 
 nav {
     float: left;
-    margin-right: 545px;
+    margin-right: 350px;
 }
 
 nav ul li {
@@ -54,7 +56,7 @@ nav img {
 .h1 {
     font-size: 52px;
     line-height: 62px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato',sans-serif;
     font-weight: lighter;
     padding-bottom: 20px;
 }
@@ -67,20 +69,22 @@ nav img {
 }
 
 .content {
-    margin: 10px auto 185px 320px;
+    margin: 20px auto 100px auto;
+    max-width: 1000px;
+    height: auto;
 }
-
-.slider-text {
+aside {
     float: left;
-    font-family: 'Lato', sans-serif;
+}
+.slider-text {
+    font-family: 'Lato',sans-serif;
     font-style: italic;
     font-size: 20px;
     line-height: 28px;
     color: #fe992a;
-    border-right: 1px lightgray inset;
     display: block;
     overflow: scroll;
-    height: 270px;
+    height: 240px;
     width: 310px;
     padding-top: 7px;
 }
@@ -91,7 +95,7 @@ nav img {
 
 .texts {
     float: left;
-    padding-right: 35px;
+    padding-right: 40px;
 }
 
 .slider-text span {
@@ -105,6 +109,7 @@ nav img {
 }
 #show {
     margin: 65px auto auto 185px;
+    display: none;
 }
 
 #show button {
@@ -135,8 +140,9 @@ h2 {
   font-size: 24px;
   line-height: 24px;
   color: #fe992a;
-  padding: 50px 0 30px 0;
+  padding: 0 0 30px 55px;
   font-weight: 400;
+    border-left: 1px lightgray solid;
 }
 
 section {
@@ -144,7 +150,17 @@ section {
     font-size: 14px;
     line-height: 28px;
     color: #737c85;
-    margin: 30px auto 0 370px;
+    margin: 0 auto;
+    padding-left: 320px;
+}
+
+section p {
+    border-left: 1px lightgray solid;
+    padding: 0 0 75px 55px;
+}
+
+.border {
+    padding-top: 50px;
 }
 
 footer {
@@ -156,14 +172,21 @@ footer {
     color: #ffffff;
 }
 
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
 
 .info, .down ul {
     float: left;
-    padding: 0;
 }
 
 .info a,.down ul li a {
     color: #ffffff;
+    display: block;
 
 }
 
@@ -172,28 +195,77 @@ footer {
 }
 
 .info {
-    margin: 50px 130px 263px 320px;
+    margin: 50px auto 263px;
+    max-width: 185px;
 }
 .fone {
     padding-bottom: 30px;
 }
 
+.down {
+    margin: 0 auto;
+    max-width: 820px;
+    overflow: hidden;
+}
+
+.services, .markets, .hseq, .about, .careers {
+    padding: 50px 70px 0 0;
+}
+
 .services {
-    margin: 50px 70px auto 0;
+    padding-left: 120px;
 }
 
-.markets {
-    margin: 50px 65px auto 0;
+.menu-button {
+    display: none;
+    cursor: pointer;
+    text-align:center;
+    padding:10px 0;
+    background-color: #33a5b4;
+    font: bold 15px 'Lato';
+    color: #ffffff;
+    margin: 0 auto;
 }
 
-.hseq {
-    margin: 50px 70px auto 0;
+@media all and (max-width: 1016px) {
+    .logo {  margin-right: 0;  }
+    nav {  margin-right: 0;  }
+    .down ul { padding-right: 40px; }
 }
 
-.about {
-    margin: 50px 90px auto 0;
+@media all and (max-width: 867px) {
+    nav ul li { margin-left: 15px; }
+    .services { padding-left: 40px; }
+    .down ul { padding-right: 20px; }
 }
 
-.careers {
-    margin: 50px auto auto 0;
+@media all and (max-width: 768px) {
+    .logo { float: none; margin-top: 0; text-align: center;}
+    .menu-button {  display: block;  }
+    nav { float:none; width:100%; }
+    nav ul { display:none; }
+    nav ul li { float: none; width:100%; background-color: rgba(51, 65, 80, .10); margin: 0; padding: 10px;}
+    nav ul li a { text-align:center; }
 }
+
+@media all and (max-width: 700px) {
+    aside { float: none; padding-left: 100px; }
+    .border h2, .border p { padding-left: 0; border-left: none; }
+    section { padding: 0 10px;  border-top: 1px lightgray solid; }
+    .down ul { padding-right: 10px; }
+    .services { padding-left: 20px; }
+}
+
+@media all and (max-width: 619px) {
+   .info, .down ul { float: none; margin: 0 auto; }
+   .down { max-width: 200px; }
+   .services { padding-left: 0; }
+   .info { padding-top: 20px; }
+}
+
+@media all and (max-width: 519px) {
+    .text { margin-left: 30px; }
+}
+
+
+

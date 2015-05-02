@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'latobold';
+    src: url('../font/lato-bold.eot');
+    src: url('../font/lato-bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../font/lato-light.eot');
+    src: url('../font/lato-light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoitalic';
+    src: url('../font/lato-italic.eot');
+    src: url('../font/lato-italic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../font/lato-regular.eot');
+    src: url('../font/lato-regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid';
+    src: url('../font/droidsans.eot');
+    src: url('../font/droidsans.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Droid';
+    src: url('../font/droidsans-bold.eot');
+    src: url('../font/droidsans-bold.eot?#iefix') format('embedded-opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+nav ul li a {
+    font-family: 'latobold', sans-serif;
+}
+
+.h1 {
+    font-family: 'latolight',sans-serif;
+}
+
+.text p {
+    font-family: 'latoregular', sans-serif;
+}
+
+.slider-text {
+    font-family:'latoitalic',sans-serif;
+}
+
+h2 {
+    font-family: 'latoregular', sans-serif;
+}
+
+footer {
+    font-family: 'Droid', sans-serif;
+}
